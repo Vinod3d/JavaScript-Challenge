@@ -1,8 +1,14 @@
+// var form = document.forms.myForm
 // var name = document.forms.myForm.name.value
 // var email = document.forms.myForm.email.value
 // let lang = document.forms.myForm.lang.value
 
-// alert("this is language" + lang);
+
+// // alert("this is language" + lang);
+
+//     // form.addEventListener("submit", function(event) {
+
+//     // }
 
 // function setCookies() {
 // 	document.cookie = "name=" + document.forms.myForm.username.value;
