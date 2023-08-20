@@ -7,4 +7,4 @@
 |  3  |  Progress Steps   | [Link](https://progress-multisteps.netlify.app) |
 |  4  |        --         |                       --                        |
 |  5  | Image-Search-App  |  [Link](https://image-search-page.netlify.app/) |
-|  6  | Drum Kit          |  [Link](https://drumkitbeep.netlify.app/)       |
+|  6  | Drum Kit          |  [Link](https://drumkitplaying.netlify.app/)       |
