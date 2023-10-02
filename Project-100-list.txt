@@ -2,6 +2,10 @@
 Creating a list of 100 intermediate-level JavaScript projects can be quite extensive, but I'll provide you with a diverse range of project ideas that you can consider for your intermediate journey:
 
 Weather Forecast App
+infinite scroll
+Calendar App
+Drag & Drop
+API Projects
 Expense Tracker
 Recipe Finder
 Online Markdown Editor
