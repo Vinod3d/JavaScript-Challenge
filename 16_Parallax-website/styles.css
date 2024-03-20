@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@200..700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    transition: 1s;
+}
+
+header nav a{
+    text-decoration: none;
+    margin-right: 30px;
+    color: #fff;
+}
+
+header .social a{
+    text-decoration: none;
+    margin-right: 10px;
+    color: #fff;
+}
+
+.parallax{
+    position: relative;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    height: 100vh;
+    background: url(assets/Background.jpg) no-repeat;
+    background-size:cover;
+    background-position: center;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+
+.parallax .heading{
+    margin-left: 100px;
+    color: #fff;
+}
+
+h2{
+    font-size: 5em;
+    font-family: "Bebas Neue", sans-serif;
+    text-transform: uppercase;
+    line-height: 0.8;
+    font-weight: 100;
+}
+
+.parallax img{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    inset: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    right: 0;
+}
+
+
+.bottom-link {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    position: fixed;
+    bottom: 80px;
+    width: 100%;
+    padding: 30px; /* Adjust the padding as needed */
+    opacity: 1;
+    transition: 1s;
+}
+
+.bottom-link.remove{
+    bottom: 120px;
+    opacity: 0;
+}
+
+.mouse {
+    margin-left: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.bottom-link span {
+    transform: rotate(90deg);
+    margin-top: 20px;
+    color: #fff;
+}
+
+.bottom-link .mouse a {
+    padding: 10px 20px
+}
+
+.share {
+    margin-left: auto;
+    padding-right: 70px;
+}
+
+.black-background{
+    width: 100%;
+    height: 500px;
+    background: #000;
+}
+
+.modal{
+    display: none;
+    position: fixed;
+    top: 30%;
+    margin: 0 auto;
+    left: 0;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    overflow: hidden;
+}
+
+.container {
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    animation: modalFadeIn 0.5s ease-out, zoomIn 0.5s ease-out;
+  }
+
+  @keyframes modalFadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes zoomIn {
+    from {
+      transform: scale(0.8);
+    }
+    to {
+      transform: scale(1);
+    }
+  }
+
+.modal .heading{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    margin-bottom: 30px;
+    transition: 1s;
+}
+
+.modal .video{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    transition: 1s;
+}
+
+
+.modal .video svg,
+.modal .video .num {
+    position: absolute;
+}
+
+.modal .video .num{
+    font-size: 15em;
+    font-weight: 600;
+    color: #58585846;
+    z-index: -22;
+}
+
+.modal.open{
+    display: block;
+    transition: 1s;
+    transform:scale(1)
+}
+
+.modal.open .heading{
+    margin-bottom: 50px;
+}
+
+.modal.open .video .num{
+    position: relative;
+    animation-name: example;
+    animation-duration: 2s;
+    animation-delay: 1s;
+}
+
+@keyframes example {
+  0%   { left:-150px; top:0px;}
+  100%  { left:40px; top:0px;}
+ 
+}
