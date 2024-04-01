@@ -341,7 +341,12 @@ button:focus {
 }
 
 .card-link .card-item:hover,
+.card-link .card-item:active,
 .card-link .card-item:hover strong{
+    color: var(--primary-color) !important;
+}
+.card-link .card-item.active,
+.card-link .card-item.active strong{
     color: var(--primary-color) !important;
 }
 
@@ -373,7 +378,9 @@ button:focus {
     z-index: 1;
 }
 
-.card-item:hover::before {
+.card-item:hover::before,
+.card-link .card-item.active .card-item::before
+ {
     width: 70%;
 }
 
@@ -382,6 +389,14 @@ button:focus {
 .about{
     height: 80% !important;
     width: 100vw;
+}
+
+.tabcontent{
+    display: none;
+}
+
+.tabcontent.active{
+    display: block !important;
 }
 
 .about .accordion-container{
@@ -539,6 +554,14 @@ button:focus {
 .testimonial .testimonial-container{
     padding: 100px  40px;
     margin: 0 65px;
+    position: relative;
+}
+
+.testimonial .testimonial-container .testimonial-slide{
+    display: none;
+}
+.testimonial .testimonial-container .testimonial-slide.active{
+    display: block;
 }
 
 .testimonial .text-content{

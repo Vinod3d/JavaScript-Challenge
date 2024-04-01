@@ -139,24 +139,24 @@
 
     <section class="card-link">
         <div class="h-100 row">
-            <div class="card-item card1 col-lg-4 col-md-4 col-sm-12 ">
+            <div class="tablinks card-item card1 col-lg-4 col-md-4 col-sm-12 " onclick="openTab(event, 'tabcontent1')">
                 <p>01</p>
                 <div class="card-text d-flex align-items-center justify-content-between">
                     <strong class="text-white">We stay connected</strong>
                     <i class="fa-solid fa-angle-right"></i>
                 </div>
             </div>
-            <div class="card-item card2 col-lg-4 col-md-4 col-sm-12 ">
+            <div class="tablinks card-item card2 col-lg-4 col-md-4 col-sm-12 " onclick="openTab(event, 'tabcontent2')">
                 <p>02</p>
                 <div class="card-text d-flex align-items-center justify-content-between">
-                    <strong class="text-white">We stay connected</strong>
+                    <strong class="text-white">We believe in diversity & inclusion</strong>
                     <i class="fa-solid fa-angle-right"></i>
                 </div>
             </div>
-            <div class="card-item card3 col-lg-4 col-md-4 col-sm-12 ">
+            <div class="tablinks card-item card3 col-lg-4 col-md-4 col-sm-12 " onclick="openTab(event, 'tabcontent3')">
                 <p>03</p>
                 <div class="card-text d-flex align-items-center justify-content-between">
-                    <strong class="text-white">We stay connected</strong>
+                    <strong class="text-white">We celebrate success</strong>
                     <i class="fa-solid fa-angle-right"></i>
                 </div>
             </div>
@@ -164,60 +164,183 @@
     </section>
 
     <section class="about">
-        <div class="row">
-            <div class="col-lg-6">
-                <div class="accordion-container">
-                    <h2 class="heading mb-4 pb-3">We <span>stay connected</span></h2>
-                    <div class="accordion-group">
-                        <div class="accordion  d-flex align-items-center gap-5">
-                            <i class="fa-solid fa-chalkboard"></i>
-                            <h5>We stay connected</h5>
+        <div id="tabcontent1" class="tabcontent active">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="accordion-container">
+                        <h2 class="heading mb-4 pb-3">We <span>stay connected</span></h2>
+                        <div class="accordion-group">
+                            <div class="accordion  d-flex align-items-center gap-5">
+                                <i class="fa-solid fa-chalkboard"></i>
+                                <h5>Quarterly Business Updates</h5>
+                            </div>
+                            <div class="panel">
+                                <p>We strive to stay connected as a team through communication and collaboration. This
+                                    materialises every quarter through our Quarterly Business Update events. These
+                                    gatherings are immersive sessions where every team
+                                    member, regardless of rank or tenure, comes together to contribute to our overarching
+                                    business strategy, and stay connected. They are opportunities to learn from our seasoned
+                                    leaders and to also share personal insights and achievements that can steer our
+                                    collective future. In an ever-evolving engineering landscape, staying connected isn’t
+                                    just a benefit—it’s essential.</p>
+                            </div>
+    
+                            <div class="accordion d-flex align-items-center gap-5">
+                                <i class="fa-regular fa-comment-dots"></i>
+                                <h5>Industry Events & Networking</h5>
+                            </div>
+                            <div class="panel">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                    incididunt ut
+                                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                    ullamco
+                                    laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            </div>
+    
+                            <div class="accordion d-flex align-items-center gap-5">
+                                <i class="fa-solid fa-book"></i>
+                                <h5>Associations Memberships</h5>
+                            </div>
+                            <div class="panel">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                    incididunt ut
+                                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                    ullamco
+                                    laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            </div>
                         </div>
-                        <div class="panel">
-                            <p>We strive to stay connected as a team through communication and collaboration. This
-                                materialises every quarter through our Quarterly Business Update events. These
-                                gatherings are immersive sessions where every team
-                                member, regardless of rank or tenure, comes together to contribute to our overarching
-                                business strategy, and stay connected. They are opportunities to learn from our seasoned
-                                leaders and to also share personal insights and achievements that can steer our
-                                collective future. In an ever-evolving engineering landscape, staying connected isn’t
-                                just a benefit—it’s essential.</p>
-                        </div>
-
-                        <div class="accordion d-flex align-items-center gap-5">
-                            <i class="fa-regular fa-comment-dots"></i>
-                            <h5>Industry Events & Networking</h5>
-                        </div>
-                        <div class="panel">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                                incididunt ut
-                                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                                ullamco
-                                laboris nisi ut aliquip ex ea commodo consequat.</p>
-                        </div>
-
-                        <div class="accordion d-flex align-items-center gap-5">
-                            <i class="fa-solid fa-book"></i>
-                            <h5>Associations Memberships</h5>
-                        </div>
-                        <div class="panel">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                                incididunt ut
-                                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                                ullamco
-                                laboris nisi ut aliquip ex ea commodo consequat.</p>
+    
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="slider-container">
+                        <div class="overlay"></div>
+                        <img src="img/about/Rectangle 39.jpg" class="" alt="">
+                        <div class="dir-btn">
+                            <a class="prev"><i class="fa-solid fa-angle-left"></i></a>
+                            <a class="next"><i class="fa-solid fa-angle-right"></i></a>
                         </div>
                     </div>
-
                 </div>
             </div>
-            <div class="col-lg-6">
-                <div class="slider-container">
-                    <div class="overlay"></div>
-                    <img src="img/about/Rectangle 39.jpg" class="" alt="">
-                    <div class="dir-btn">
-                        <a class="prev"><i class="fa-solid fa-angle-left"></i></a>
-                        <a class="next"><i class="fa-solid fa-angle-right"></i></a>
+        </div>
+        <div id="tabcontent2" class="tabcontent">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="slider-container">
+                        <div class="overlay"></div>
+                        <img src="img/about/Rectangle 39.jpg" class="" alt="">
+                        <div class="dir-btn">
+                            <a class="prev"><i class="fa-solid fa-angle-left"></i></a>
+                            <a class="next"><i class="fa-solid fa-angle-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="accordion-container">
+                        <h2 class="heading mb-4 pb-3">We believe <span>stay connected</span></h2>
+                        <div class="accordion-group">
+                            <div class="accordion  d-flex align-items-center gap-5">
+                                <i class="fa-solid fa-chalkboard"></i>
+                                <h5>Quarterly Business Updates</h5>
+                            </div>
+                            <div class="panel">
+                                <p>We strive to stay connected as a team through communication and collaboration. This
+                                    materialises every quarter through our Quarterly Business Update events. These
+                                    gatherings are immersive sessions where every team
+                                    member, regardless of rank or tenure, comes together to contribute to our overarching
+                                    business strategy, and stay connected. They are opportunities to learn from our seasoned
+                                    leaders and to also share personal insights and achievements that can steer our
+                                    collective future. In an ever-evolving engineering landscape, staying connected isn’t
+                                    just a benefit—it’s essential.</p>
+                            </div>
+    
+                            <div class="accordion d-flex align-items-center gap-5">
+                                <i class="fa-regular fa-comment-dots"></i>
+                                <h5>Industry Events & Networking</h5>
+                            </div>
+                            <div class="panel">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                    incididunt ut
+                                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                    ullamco
+                                    laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            </div>
+    
+                            <div class="accordion d-flex align-items-center gap-5">
+                                <i class="fa-solid fa-book"></i>
+                                <h5>Associations Memberships</h5>
+                            </div>
+                            <div class="panel">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                    incididunt ut
+                                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                    ullamco
+                                    laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            </div>
+                        </div>
+    
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+        <div id="tabcontent3" class="tabcontent">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="accordion-container">
+                        <h2 class="heading mb-4 pb-3">We <span>stay connected</span></h2>
+                        <div class="accordion-group">
+                            <div class="accordion  d-flex align-items-center gap-5">
+                                <i class="fa-solid fa-chalkboard"></i>
+                                <h5>Quarterly Business Updates</h5>
+                            </div>
+                            <div class="panel">
+                                <p>We strive to stay connected as a team through communication and collaboration. This
+                                    materialises every quarter through our Quarterly Business Update events. These
+                                    gatherings are immersive sessions where every team
+                                    member, regardless of rank or tenure, comes together to contribute to our overarching
+                                    business strategy, and stay connected. They are opportunities to learn from our seasoned
+                                    leaders and to also share personal insights and achievements that can steer our
+                                    collective future. In an ever-evolving engineering landscape, staying connected isn’t
+                                    just a benefit—it’s essential.</p>
+                            </div>
+    
+                            <div class="accordion d-flex align-items-center gap-5">
+                                <i class="fa-regular fa-comment-dots"></i>
+                                <h5>Industry Events & Networking</h5>
+                            </div>
+                            <div class="panel">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                    incididunt ut
+                                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                    ullamco
+                                    laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            </div>
+    
+                            <div class="accordion d-flex align-items-center gap-5">
+                                <i class="fa-solid fa-book"></i>
+                                <h5>Associations Memberships</h5>
+                            </div>
+                            <div class="panel">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                    incididunt ut
+                                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                    ullamco
+                                    laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            </div>
+                        </div>
+    
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="slider-container">
+                        <div class="overlay"></div>
+                        <img src="img/about/Rectangle 39.jpg" class="" alt="">
+                        <div class="dir-btn">
+                            <a class="prev"><i class="fa-solid fa-angle-left"></i></a>
+                            <a class="next"><i class="fa-solid fa-angle-right"></i></a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -307,24 +430,61 @@
 
     <section class="testimonial">
         <div class="testimonial-container ">
-            <div class="row">
-                <div class="img col-lg-4">
-                    <img src="img/testimonial/Rectangle 19.jpg" class="img-fluid" alt="">
-                </div>
-                <div class="text-content col-lg-8">
-                    <i class="fa-solid fa-quote-left"></i>
-                    <p class="text">
-                        
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sodales turpis et lacinia fermentum. Curabitur vestibulum at arcu sed blandit. In consequat euismod purus nec imperdiet.
-                    </p>
-                    <p>Title</p>
-                    <p>Name</p>
-                    <strong><i class="fa-solid fa-arrow-right"></i> Read my story</strong>
-                    <div class="dir-btn">
-                        <a class="prev"><i class="fa-solid fa-angle-left"></i></a>
-                        <a class="next"><i class="fa-solid fa-angle-right"></i></a>
+            <div class="testimonial-slide active">
+                <div class="row">
+                    <div class="img col-lg-4">
+                        <img src="img/testimonial/Rectangle 19.jpg" class="img-fluid" alt="">
+                    </div>
+                    <div class="text-content col-lg-8">
+                        <i class="fa-solid fa-quote-left"></i>
+                        <p class="text">
+                            
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sodales turpis et lacinia fermentum. Curabitur vestibulum at arcu sed blandit. In consequat euismod purus nec imperdiet.
+                        </p>
+                        <p>Title</p>
+                        <p>Name</p>
+                        <strong><i class="fa-solid fa-arrow-right"></i> Read my story</strong>
                     </div>
                 </div>
+            </div>
+            <div class="testimonial-slide">
+                <div class="row">
+                    <div class="img col-lg-4">
+                        <img src="img/testimonial/photo2l.jpg" class="img-fluid" alt="">
+                    </div>
+                    <div class="text-content col-lg-8">
+                        <i class="fa-solid fa-quote-left"></i>
+                        <p class="text">
+                            
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sodales turpis et lacinia fermentum. Curabitur vestibulum at arcu sed blandit. In consequat euismod purus nec imperdiet.
+                        </p>
+                        <p>Title</p>
+                        <p>Name</p>
+                        <strong><i class="fa-solid fa-arrow-right"></i> Read my story</strong>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-slide">
+                <div class="row">
+                    <div class="img col-lg-4">
+                        <img src="img/testimonial/photo3.jpg" class="img-fluid" alt="">
+                    </div>
+                    <div class="text-content col-lg-8">
+                        <i class="fa-solid fa-quote-left"></i>
+                        <p class="text">
+                            
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sodales turpis et lacinia fermentum. Curabitur vestibulum at arcu sed blandit. In consequat euismod purus nec imperdiet.
+                        </p>
+                        <p>Title</p>
+                        <p>Name</p>
+                        <strong><i class="fa-solid fa-arrow-right"></i> Read my story</strong>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dir-btn">
+                <a class="prev" onclick="plusSlides(-1)"><i class="fa-solid fa-angle-left"></i></a>
+                <a class="next" onclick="plusSlides(1)"><i class="fa-solid fa-angle-right"></i></a>
             </div>
         </div>
     </section>
