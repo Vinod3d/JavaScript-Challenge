@@ -20,7 +20,7 @@ function autoSlide() {
 	counter += 1;
 	slidefun(counter);
 }
-function plusSlides(n) {
+function changeSlides(n) {
 	counter += n;
 	slidefun(counter);
 }
