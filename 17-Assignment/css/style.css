@@ -391,6 +391,12 @@ button:focus {
     width: 100vw;
 }
 
+@media  (max-width: 767px) {
+    .about{
+        margin-top: 95px;
+    }
+}
+
 .tabcontent{
     display: none;
 }
