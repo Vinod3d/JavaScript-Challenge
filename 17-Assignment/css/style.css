@@ -634,6 +634,20 @@ button:focus {
 }
 
 
+.img-effect{
+    margin: 0;
+    position: relative;
+}
+
+.img-effect::before{
+    content: '';
+    display: block;
+    position: absolute;
+    inset: 0;
+    background-color: var(--color3);
+    mix-blend-mode: color;
+}
+
 /* FOOTER */
 
 .footer{
