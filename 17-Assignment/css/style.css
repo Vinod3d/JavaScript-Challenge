@@ -45,7 +45,7 @@ button:focus {
 .heading{
     font-family: var(--secondary-font);
     font-weight: 200;
-    font-size: 50px;
+    font-size: 65px;
 }
 .heading span{
     color: var(--primary-color);
@@ -115,7 +115,7 @@ button:focus {
 .main-header{
     height: 100px;
     padding: 0 20px;
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
     left: 0;
@@ -123,8 +123,14 @@ button:focus {
     border-bottom: 1px solid var(--secondary-color);
     display: flex;
     align-items: center;
-    z-index: 10;
+    z-index: 10000;
+    transition: all 0.6s  ease-in-out;
 }
+.main-header.scrolled {
+    background-color: rgb(8 8 8 / 84%);
+    color: #000;
+}
+
 
 .menu-header{
     display: flex;
@@ -238,6 +244,7 @@ button:focus {
     width: 100vw;
     overflow: hidden;
     position: relative;
+    z-index: 8;
 }
 .myslide{
 	width: 100%;
@@ -384,6 +391,9 @@ button:focus {
     width: 70%;
 }
 
+/* TAB */
+
+
 
 /* ABOUT */
 .about{
@@ -470,7 +480,18 @@ button:focus {
 .about .slider-container img{
     height: auto;
     width: 100%;
-    max-height: 900px;
+    max-height: 930px;
+}
+
+.tabSlide{
+    display: none;
+}
+.tabSlide.active{
+    display: block;
+}
+
+.tabSlide img{
+    width: auto;
 }
 
 
@@ -497,12 +518,17 @@ button:focus {
     line-height: 1.8;
 }
 
+.work .work-bgImage img{
+    width: 100%;
+    height: auto;
+}
+
 
 /* GALLERY */
 
 .gallery{
-    width: 80% !important;
-    margin: 0 auto;
+    width: 100% !important;
+    /* margin: 0 auto; */
 }
 
 .gallery .grid-container{
@@ -514,8 +540,9 @@ button:focus {
 }
 .gallery .grid-container .grid-item img{
     width: 100%;
-    height: 100%;
+    min-height: 100%;
     object-fit: cover;
+    max-height: 600px;
 }
 
 .grid-item-3 {
@@ -569,7 +596,14 @@ button:focus {
 .testimonial .testimonial-container .testimonial-slide.active{
     display: block;
 }
-
+.testimonial-slide .img{
+    width: 400px;
+    height: 370px;
+    border-radius: 50%;
+}
+.testimonial-slide .img img{
+    border-radius: 1%;
+}
 .testimonial .text-content{
     padding-left: 60px;
 }

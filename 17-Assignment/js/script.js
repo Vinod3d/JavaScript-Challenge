@@ -1,11 +1,28 @@
-// NAVBAR
-function toggleNav() {
+// Navbar Toggle Function
+const toggleNav = function() {
     const nav = document.getElementById('main-nav');
     const hamburger = document.querySelector('.hamburger');
     
     nav.classList.toggle('active');
     hamburger.classList.toggle('active');
-}
+};
+
+// Navbar Scroll Effect Function
+const scrollEffect = function() {
+    window.addEventListener('scroll', function() {
+        const header = document.getElementById('main-header');
+        const scrollPosition = window.scrollY;
+
+        // Add scrolled class to header when scroll position is greater than 300px
+        if (scrollPosition > 300) {
+            header.classList.add('scrolled');
+        } else {
+            header.classList.remove('scrolled');
+        }
+    });
+};
+scrollEffect();
+
 
 
 
@@ -22,10 +39,6 @@ function autoSlide() {
 }
 function changeSlides(n) {
 	counter += n;
-	slidefun(counter);
-}
-function currentSlide(n) {
-	counter = n;
 	slidefun(counter);
 }
 
@@ -46,6 +59,30 @@ function slidefun(n) {
 }
 
 
+// TAB SLIDER
+const tabSlides = document.querySelectorAll('.tabSlide');
+let countNum = 1;
+showTabSlide(countNum);
+
+function nextSlides(n) {
+	countNum += n;
+	showTabSlide(countNum);
+}
+
+
+function showTabSlide(n){
+	for(let i = 0;i<tabSlides.length;i++){
+		tabSlides[i].classList.remove("active");
+	}
+	if(n > tabSlides.length){
+	   countNum = 1;
+	   }
+	if(n < 1){
+	   countNum = tabSlides.length;
+	}
+	tabSlides[countNum - 1].classList.add("active");
+}
+
 
 // Testimonial
 const slides= document.querySelectorAll('.testimonial-slide');
@@ -57,16 +94,10 @@ function plusSlides(n) {
 	count += n;
 	slidetest(count);
 }
-function currentSlide(n) {
-	count = n;
-	slidetest(count);
-}
 
 
 function slidetest(n) {
-	
-	let i;
-	for(i = 0;i<slides.length;i++){
+	for(let i = 0;i<slides.length;i++){
 		slides[i].classList.remove("active");
 	}
 	if(n > slides.length){
