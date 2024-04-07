@@ -23,7 +23,7 @@
     </div>
 
     <!-- HEADER -->
-    <header class="main-header">
+    <header class="main-header" id="main-header">
         <div class="container-fluid">
             <div class="menu-header">
                 <div class="custom-nav d-none d-lg-block">
@@ -212,11 +212,21 @@
                 </div>
                 <div class="col-lg-6">
                     <div class="slider-container">
-                        <div class="overlay"></div>
-                        <img src="img/about/Rectangle 39.jpg" class="" alt="">
+                        <div class="tabSlide active">
+                            <div class="overlay"></div>
+                            <img src="img/about/Rectangle 39.jpg" class="" alt="">
+                        </div>
+                        <div class="tabSlide">
+                            <div class="overlay"></div>
+                            <img src="img/about/medium-shot.jpg" class="" alt="">
+                        </div>
+                        <div class="tabSlide">
+                            <div class="overlay"></div>
+                            <img src="img/about/team-working.jpg" class="" alt="">
+                        </div>
                         <div class="dir-btn">
-                            <a class="prev"><i class="fa-solid fa-angle-left"></i></a>
-                            <a class="next"><i class="fa-solid fa-angle-right"></i></a>
+                            <a class="prev" onclick="nextSlides(-1)"><i class="fa-solid fa-angle-left"></i></a>
+                            <a class="next" onclick="nextSlides(1)"><i class="fa-solid fa-angle-right"></i></a>
                         </div>
                     </div>
                 </div>
@@ -369,15 +379,20 @@
                         true sense of belonging.
                         </p>
 
-                        <strong>Some of our strategic initiatives include:</strong>
+                        <strong class="fs-3 text-white">Some of our strategic initiatives include:</strong>
                     </div>
                 </div>
+            </div>
+        </div>
+        <div class="work-bgImage">
+            <div>
+                <img src="img/Group 1593.png" alt="">
             </div>
         </div>
     </section>
 
 
-    <section class="gallery  container m-auto">
+    <section class="gallery   m-auto">
         <div class="grid-container">
             <div  class="grid-item">
                 <img src="img/gallery/Rectangle 20.jpg" alt="">
@@ -507,7 +522,7 @@
     <footer class="footer">
         <div class="row">
             <div class="bottom-links col-lg-3 col-md-6 col-sm-12 d-flex gap-3 border-right flex-column">
-                <img src="img/logo/foter-logo.png" alt="">
+                <img src="img/logo/Group 1484.png" alt="">
                 <ul class="social d-flex gap-3">
                     <li><i class="fa-brands fa-instagram"></i></li>
                     <li><i class="fa-brands fa-facebook"></i></li>
@@ -565,7 +580,7 @@
 
 
     <script src="js/preloader.js"></script>
-    <script src="js/script.js"></script>
+    <script src="js/script.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
