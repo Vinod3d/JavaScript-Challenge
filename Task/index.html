@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business site</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Oswald:wght@200..700&display=swap"
+        rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- PRELOAD -->
+    <div class="onloadpage" id="page_loader">
+        <div class="pre-content">
+            <div class="logo-pre"><img src="img/logo/Logo.png" alt="Logo" class="img-fluid" /></div>
+        </div>
+    </div>
+
+    <!-- HEADER -->
+    <header class="main-header" id="main-header">
+        <div class="container-fluid">
+            <div class="menu-header">
+                <div class="custom-nav d-none d-lg-block">
+                    <ul class="nav-list">
+                        <li><a href="#projects" class="menu-link">Projects</a></li>
+                        <li><a href="#experties" class="menu-link">Experties</a></li>
+                        <li><a href="#about" class="menu-link">About Us</a></li>
+                        <li><a href="#people" class="menu-link">People</a></li>
+                    </ul>
+                </div>
+
+                <div class="logo">
+                    <a class="navbar-brand" href="/">
+                        <img src="img/logo/Logo.png" alt="Logo" />
+                    </a>
+                </div>
+
+                <div class="custom-nav action-link d-none d-lg-block">
+                    <ul class="nav-list">
+                        <li><a href="#careers" class="menu-link">careers</a></li>
+                        <li><a href="#au" class="menu-link">au</a></li>
+                    </ul>
+                </div>
+
+                <div class="hamburger d-block d-lg-none" onclick="toggleNav()">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+            </div>
+
+            <!-- Mobile Menu -->
+            <nav id="main-nav" class="d-lg-none">
+                <ul class="first-nav">
+                    <li><a href="#projects" class="menu-link">Projects</a></li>
+                    <li><a href="#experties" class="menu-link">Experties</a></li>
+                    <li><a href="#about" class="menu-link">About Us</a></li>
+                    <li><a href="#people" class="menu-link">People</a></li>
+                    <li><a href="#careers" class="menu-link">careers</a></li>
+                    <li><a href="#au" class="menu-link">au</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- HERO SECTION STARTS HERE -->
+    <section>
+        <div class="slider">
+            <!-- fade css -->
+            <div class="myslide">
+                <div class="overlay">
+                    <div class="txt">
+                        <span>Home / Why work with us</span>
+                        <h2>Headline #1</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                    </div>
+                </div>
+                <img src="img/banner/Banner.jpg" style="width: 100%; height: 100%;">
+            </div>
+
+            <div class="myslide">
+                <div class="overlay">
+                    <div class="txt">
+                        <span>Home / Why work with us</span>
+                        <h2>Headline #2</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                    </div>
+                </div>
+                <img src="img/banner/Banner2.jpg" style="width: 100%; height: 100%;" />
+            </div>
+
+            <div class="myslide">
+                <div class="overlay">
+                    <div class="txt">
+                        <span>Home / Why work with us</span>
+                        <h2>Headline #3</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                    </div>
+                </div>
+                <img src="img/banner/Banner3.jpg" style="width: 100%; height: 100%;">
+            </div>
+
+            <div class="myslide">
+                <div class="overlay">
+                    <div class="txt">
+                        <span>Home / Why work with us</span>
+                        <h2>Headline #4</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                    </div>
+                </div>
+                <img src="img/banner/Banner4.jpg" style="width: 100%; height: 100%;" />
+            </div>
+
+
+            <!-- onclick js -->
+            <div class="dir-btn">
+                <a class="prev" onclick="changeSlides(-1)"><i class="fa-solid fa-angle-left"></i></a>
+                <a class="next" onclick="changeSlides(1)"><i class="fa-solid fa-angle-right"></i></a>
+            </div>
+
+            <div class="dotsbox" style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+            </div>
+            <!-- /onclick js -->
+        </div>
+    </section>
+
+    <section class="card-link">
+        <div class="h-100 row">
+            <div class="tablinks card-item card1 col-lg-4 col-md-4 col-sm-12 " onclick="openTab(event, 'tabcontent1')">
+                <p>01</p>
+                <div class="card-text d-flex align-items-center justify-content-between">
+                    <strong class="text-white">We stay connected</strong>
+                    <i class="fa-solid fa-angle-right"></i>
+                </div>
+            </div>
+            <div class="tablinks card-item card2 col-lg-4 col-md-4 col-sm-12 " onclick="openTab(event, 'tabcontent2')">
+                <p>02</p>
+                <div class="card-text d-flex align-items-center justify-content-between">
+                    <strong class="text-white">We believe in diversity & inclusion</strong>
+                    <i class="fa-solid fa-angle-right"></i>
+                </div>
+            </div>
+            <div class="tablinks card-item card3 col-lg-4 col-md-4 col-sm-12 " onclick="openTab(event, 'tabcontent3')">
+                <p>03</p>
+                <div class="card-text d-flex align-items-center justify-content-between">
+                    <strong class="text-white">We celebrate success</strong>
+                    <i class="fa-solid fa-angle-right"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about">
+        <div id="tabcontent1" class="tabcontent active">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="accordion-container">
+                        <h2 class="heading mb-4 pb-3">We <span>stay connected</span></h2>
+                        <div class="accordion-group">
+                            <div class="accordion  d-flex align-items-center gap-5">
+                                <i class="fa-solid fa-chalkboard"></i>
+                                <h5>Quarterly Business Updates</h5>
+                            </div>
+                            <div class="panel">
+                                <p>We strive to stay connected as a team through communication and collaboration. This
+                                    materialises every quarter through our Quarterly Business Update events. These
+                                    gatherings are immersive sessions where every team
+                                    member, regardless of rank or tenure, comes together to contribute to our overarching
+                                    business strategy, and stay connected. They are opportunities to learn from our seasoned
+                                    leaders and to also share personal insights and achievements that can steer our
+                                    collective future. In an ever-evolving engineering landscape, staying connected isn’t
+                                    just a benefit—it’s essential.</p>
+                            </div>
+    
+                            <div class="accordion d-flex align-items-center gap-5">
+                                <i class="fa-regular fa-comment-dots"></i>
+                                <h5>Industry Events & Networking</h5>
+                            </div>
+                            <div class="panel">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                    incididunt ut
+                                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                    ullamco
+                                    laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            </div>
+    
+                            <div class="accordion d-flex align-items-center gap-5">
+                                <i class="fa-solid fa-book"></i>
+                                <h5>Associations Memberships</h5>
+                            </div>
+                            <div class="panel">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                    incididunt ut
+                                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                    ullamco
+                                    laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            </div>
+                        </div>
+    
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="slider-container">
+                        <div class="tabSlide active">
+                            <div class="overlay"></div>
+                            <img src="img/about/Rectangle 39.jpg" class="" alt="">
+                        </div>
+                        <div class="tabSlide">
+                            <div class="overlay"></div>
+                            <img src="img/about/medium-shot.jpg" class="" alt="">
+                        </div>
+                        <div class="tabSlide">
+                            <div class="overlay"></div>
+                            <img src="img/about/team-working.jpg" class="" alt="">
+                        </div>
+                        <div class="dir-btn">
+                            <a class="prev" onclick="nextSlides(-1)"><i class="fa-solid fa-angle-left"></i></a>
+                            <a class="next" onclick="nextSlides(1)"><i class="fa-solid fa-angle-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="tabcontent2" class="tabcontent">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="slider-container">
+                        <div class="overlay"></div>
+                        <img src="img/about/Rectangle 39.jpg" class="" alt="">
+                        <div class="dir-btn">
+                            <a class="prev"><i class="fa-solid fa-angle-left"></i></a>
+                            <a class="next"><i class="fa-solid fa-angle-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="accordion-container">
+                        <h2 class="heading mb-4 pb-3">We believe <span>stay connected</span></h2>
+                        <div class="accordion-group">
+                            <div class="accordion  d-flex align-items-center gap-5">
+                                <i class="fa-solid fa-chalkboard"></i>
+                                <h5>Quarterly Business Updates</h5>
+                            </div>
+                            <div class="panel">
+                                <p>We strive to stay connected as a team through communication and collaboration. This
+                                    materialises every quarter through our Quarterly Business Update events. These
+                                    gatherings are immersive sessions where every team
+                                    member, regardless of rank or tenure, comes together to contribute to our overarching
+                                    business strategy, and stay connected. They are opportunities to learn from our seasoned
+                                    leaders and to also share personal insights and achievements that can steer our
+                                    collective future. In an ever-evolving engineering landscape, staying connected isn’t
+                                    just a benefit—it’s essential.</p>
+                            </div>
+    
+                            <div class="accordion d-flex align-items-center gap-5">
+                                <i class="fa-regular fa-comment-dots"></i>
+                                <h5>Industry Events & Networking</h5>
+                            </div>
+                            <div class="panel">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                    incididunt ut
+                                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                    ullamco
+                                    laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            </div>
+    
+                            <div class="accordion d-flex align-items-center gap-5">
+                                <i class="fa-solid fa-book"></i>
+                                <h5>Associations Memberships</h5>
+                            </div>
+                            <div class="panel">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                    incididunt ut
+                                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                    ullamco
+                                    laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            </div>
+                        </div>
+    
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+        <div id="tabcontent3" class="tabcontent">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="accordion-container">
+                        <h2 class="heading mb-4 pb-3">We <span>stay connected</span></h2>
+                        <div class="accordion-group">
+                            <div class="accordion  d-flex align-items-center gap-5">
+                                <i class="fa-solid fa-chalkboard"></i>
+                                <h5>Quarterly Business Updates</h5>
+                            </div>
+                            <div class="panel">
+                                <p>We strive to stay connected as a team through communication and collaboration. This
+                                    materialises every quarter through our Quarterly Business Update events. These
+                                    gatherings are immersive sessions where every team
+                                    member, regardless of rank or tenure, comes together to contribute to our overarching
+                                    business strategy, and stay connected. They are opportunities to learn from our seasoned
+                                    leaders and to also share personal insights and achievements that can steer our
+                                    collective future. In an ever-evolving engineering landscape, staying connected isn’t
+                                    just a benefit—it’s essential.</p>
+                            </div>
+    
+                            <div class="accordion d-flex align-items-center gap-5">
+                                <i class="fa-regular fa-comment-dots"></i>
+                                <h5>Industry Events & Networking</h5>
+                            </div>
+                            <div class="panel">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                    incididunt ut
+                                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                    ullamco
+                                    laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            </div>
+    
+                            <div class="accordion d-flex align-items-center gap-5">
+                                <i class="fa-solid fa-book"></i>
+                                <h5>Associations Memberships</h5>
+                            </div>
+                            <div class="panel">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                    incididunt ut
+                                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                    ullamco
+                                    laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            </div>
+                        </div>
+    
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="slider-container">
+                        <div class="overlay"></div>
+                        <img src="img/about/Rectangle 39.jpg" class="" alt="">
+                        <div class="dir-btn">
+                            <a class="prev"><i class="fa-solid fa-angle-left"></i></a>
+                            <a class="next"><i class="fa-solid fa-angle-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="work">
+        <div class="work-container">
+            <div class="row">
+                <div class="col-lg-6 col-md-12">
+                    <h2 class="heading mb-4 pb-3">We believe in <span>diversity & inclusion</span></h2>
+                </div>
+                <div class="col-lg-6 col-md-12">
+                    <div class="text-content">
+                        <p> At CaSE we do not just accept difference — we celebrate it, we support it, and we thrive on it
+                            for the benefit of our employees, our services, our industry and our community. We are proud to
+                            be an equal opportunity
+                            employer. Guided by our values and beliefs, we foster an inclusive workplace culture where
+                            employees thrive because of their differences, not in spite of them.
+                        </p>
+
+                        <p>
+                            Our values and beliefs, we foster an inclusive workplace culture where employees thrive because
+                        of their differences, not in spite of them Our Commitment to reinventing the standard. With more
+                        than 20 nationalities represented in our global workforce, we firmly believe that our ability to
+                        deliver high-quality results is fueled by our active efforts to embed diversity and inclusion.
+                        We recognise, respect, and strive to create an environment where employees can excel and feel a
+                        true sense of belonging.
+                        </p>
+
+                        <strong class="fs-3 text-white">Some of our strategic initiatives include:</strong>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="work-bgImage">
+            <div>
+                <img src="img/Group 1593.png" alt="">
+            </div>
+        </div>
+    </section>
+
+
+    <section class="gallery   m-auto">
+        <div class="grid-container">
+            <div  class="grid-item">
+                <img src="img/gallery/Rectangle 20.jpg" alt="">
+            </div>
+            <div  class="grid-item">
+                <img src="img/gallery/Rectangle 21.jpg" alt="">
+            </div>
+            <div  class="grid-item grid-item-3 span-col">
+                <img src="img/gallery/Rectangle 22.jpg" alt="">
+            </div>
+            <div  class="grid-item grid-item-4">
+                <img src="img/gallery/Rectangle 23.jpg" alt="">
+            </div>
+            <div class="grid-item">
+                <div class="text-content p-4">
+                    <h2 class="heading mb-4 pb-3">We celebrate <span>success</span></h2>
+                    <p>At CaSE we understand that every achievement, big or small, is a result of the hard work and dedication of our team members. We take pride in 
+                        celebrating these moments because they underscore the commitment and effort put into each project. 
+                    </p>
+                    <p>Some of our favourite events on the calendar include our coveted Melbourne Cup event and our always amazing Christmas Party. In-between, our 
+                        team celebrate together during team cycling events, regular team dinners and social morning teas to celebrate milestones and special days. Taking the time to celebrate wins is our way of showing gratitude and ensuring everyone knows their efforts make a difference.</p>
+                </div>
+            </div>
+            <div  class="grid-item grid-item-5">
+                <img src="img/gallery/Rectangle 27.jpg" alt="">
+            </div>
+            <div class="grid-item grid-item-6">
+                <div class="text-content p-4">
+                    <h2 class="heading mb-4 pb-3">Employee Appreciation <span>Program</span></h2>
+                    <p>At CaSE we understand that every achievement, big or small, is a result of the hard work and dedication of our team members. We take pride in 
+                        celebrating these moments because they underscore the commitment and effort put into each project. 
+                    </p>
+                    <p>Some of our favourite events on the calendar include our coveted Melbourne Cup event and our always amazing Christmas Party. In-between, our 
+                        team celebrate together during team cycling events, regular team dinners and social morning teas to celebrate milestones and special days. Taking the time to celebrate wins is our way of showing gratitude and ensuring everyone knows their efforts make a difference.</p>
+                </div>
+            </div>
+            <div  class="grid-item grid-item-7">
+                <img src="img/gallery/Rectangle 29.jpg" alt="">
+            </div>
+            <div  class="grid-item grid-item-8">
+                <img src="img/gallery/Rectangle 30.jpg" alt="">
+            </div>
+            <div  class="grid-item grid-item-9">
+                <img src="img/gallery/Rectangle 31.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonial">
+        <div class="testimonial-container ">
+            <div class="testimonial-slide active">
+                <div class="row">
+                    <div class="img col-lg-4">
+                        <img src="img/testimonial/Rectangle 19.jpg" class="img-fluid" alt="">
+                    </div>
+                    <div class="text-content col-lg-8">
+                        <i class="fa-solid fa-quote-left"></i>
+                        <p class="text">
+                            
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sodales turpis et lacinia fermentum. Curabitur vestibulum at arcu sed blandit. In consequat euismod purus nec imperdiet.
+                        </p>
+                        <p>Title</p>
+                        <p>Name</p>
+                        <strong><i class="fa-solid fa-arrow-right"></i> Read my story</strong>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-slide">
+                <div class="row">
+                    <div class="img col-lg-4">
+                        <img src="img/testimonial/photo2l.jpg" class="img-fluid" alt="">
+                    </div>
+                    <div class="text-content col-lg-8">
+                        <i class="fa-solid fa-quote-left"></i>
+                        <p class="text">
+                            
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sodales turpis et lacinia fermentum. Curabitur vestibulum at arcu sed blandit. In consequat euismod purus nec imperdiet.
+                        </p>
+                        <p>Title</p>
+                        <p>Name</p>
+                        <strong><i class="fa-solid fa-arrow-right"></i> Read my story</strong>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-slide">
+                <div class="row">
+                    <div class="img col-lg-4">
+                        <img src="img/testimonial/photo3.jpg" class="img-fluid" alt="">
+                    </div>
+                    <div class="text-content col-lg-8">
+                        <i class="fa-solid fa-quote-left"></i>
+                        <p class="text">
+                            
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sodales turpis et lacinia fermentum. Curabitur vestibulum at arcu sed blandit. In consequat euismod purus nec imperdiet.
+                        </p>
+                        <p>Title</p>
+                        <p>Name</p>
+                        <strong><i class="fa-solid fa-arrow-right"></i> Read my story</strong>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dir-btn">
+                <a class="prev" onclick="plusSlides(-1)"><i class="fa-solid fa-angle-left"></i></a>
+                <a class="next" onclick="plusSlides(1)"><i class="fa-solid fa-angle-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <div class="global">
+        <div class="container">
+            <div class="text-content text-center">
+                <h2 class="heading mb-4 pb-3">As a <span>global business, </span>we encourage you to contact us no matter where you are located in the world.</h2>
+                <p >Browse our job opportunities across the globe.</p>
+                <strong>Open Roles <i class="fa-solid fa-arrow-right"></i></strong>
+            </div>
+
+            <div class="map-container">
+                <figure class="img-effect">
+                    <img src="img/map.png" class="img-fluid" alt="">
+                </figure>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="footer">
+        <div class="row">
+            <div class="bottom-links col-lg-3 col-md-6 col-sm-12 d-flex gap-3 border-right flex-column">
+                <img src="img/logo/Group 1484.png" alt="">
+                <ul class="social d-flex gap-3">
+                    <li><i class="fa-brands fa-instagram"></i></li>
+                    <li><i class="fa-brands fa-facebook"></i></li>
+                    <li><i class="fa-brands fa-linkedin"></i></li>
+                </ul>
+            </div>
+            <div class="bottom-links col-lg-3 col-md-6 col-sm-12">
+                <h5>Expertise</h5>
+                <ul>
+                    <li><a href="#">Design</a></li>
+                    <li><a href="#">Specialist Experties</a></li>
+                    <li><a href="#">Commercial Advice</a></li>
+                    <li><a href="#">Traffic Transport</a></li>
+                </ul>
+            </div>
+            <div class="bottom-links col-lg-2 col-md-6 col-sm-12">
+                <h5>Sectors</h5>
+                <ul>
+                    <li><a href="#">Road</a></li>
+                    <li><a href="#">Tunner</a></li>
+                    <li><a href="#">Bridge</a></li>
+                    <li><a href="#">Others</a></li>
+                </ul>
+            </div>
+            <div class="bottom-links col-lg-4 col-md-6 col-sm-12">
+                <div class="row">
+                    <div class="col">
+                        <h5>Our Business</h5>
+                        <ul>
+                            <li><a href="#">Work With Us</a></li>
+                            <li><a href="#">Projects</a></li>
+                            <li><a href="#">News</a></li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <h5>Our Capabilities</h5>
+                        <ul>
+                            <li><a href="#">Engineers</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="container-fluid d-flex justify-content-between align-items-center p-3">
+                <p>&copy; 2024 Your Company. All Rights Reserved.</p>
+                <ul class="d-flex gap-3 policy-link">
+                    <li><a href="#">Terms & Condition</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="js/preloader.js"></script>
+    <script src="js/script.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

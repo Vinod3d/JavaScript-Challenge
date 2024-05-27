@@ -1,0 +1,17 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #f0f0f0;
+}
+
+#logo {
+  position: absolute;
+  transition: transform 0.2s ease-in-out, left 2s ease-in-out, top 2s ease-in-out;
+}
+
+#logo img{
+  width: 100px;
+  height: auto;
+}
