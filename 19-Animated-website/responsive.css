@@ -1,0 +1,125 @@
+@media  (max-width: 1100px) {
+    nav .part2{
+        display: none;
+    }
+
+    .hamburger-menu{
+        display: block;
+    }
+
+    .side-menu{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        position: absolute;
+        top: 0;
+        right: -300px;
+        width: 250px;
+        background: #c8ebb7;
+        padding: 20px;
+        height: 100%;
+        z-index: 10;
+        transition: 0.4s;
+    }
+    .side-menu i{
+        cursor: pointer;
+        font-size:30px;
+    }
+    
+    .side-menu.active{
+        right: 0px ;
+    }
+
+    .side-menu h4{
+        border-radius: 30px;
+        padding: 10px;
+        cursor: pointer;
+    }
+    .side-menu h4:hover{
+        background:  #c0e0b28e;
+        border-radius: 20px;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 992px) {
+    .center{
+        flex-direction: column;
+    }
+    .center-part1, .center-part2{
+        width: 100%;
+    }
+
+    .center-part2{
+        margin: 0 auto;
+    }
+
+    .center-part2 img{
+        width: 70%;
+        position: static;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .elem{
+        width: 100%
+    }
+
+    .cta-section {
+        padding: 40px 20px;
+    }
+
+    .cta-container .cta-image {
+        display: none;
+    }
+
+    .case-studies {
+        flex-direction: column;
+    }
+}
+
+
+@media (max-width: 768px) {
+    nav {
+        padding: 20px 20px ;
+    }
+    nav h1{
+        font-size: 30px;
+    }
+
+    .section1 .center{
+        padding: 30px 20px;
+    }
+
+    .sectionbottom {
+        padding: 60px 20px;
+    }
+    .section2 .services{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 20px;
+    }
+    .section2 .services p{
+        width: 100%;
+    }
+    .section2 .container{
+        padding: 40px 20px;
+    }
+    .cta-container {
+        flex-direction: row;
+    }
+
+
+
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+
+    .footer-right {
+        flex-direction: row;
+        align-items: center;
+    }
+}
