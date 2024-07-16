@@ -10,11 +10,10 @@ function age(){
     var m2 = 1 + date.getMonth();
     var y2 = date.getFullYear();
     
-    // var month = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
    
     
     let y = y2 - y1
-    let m = m2 - m1
+    let m = m2 - m1 
     let d = d2 - d1
 
     if(m<0 || m == 0){
@@ -25,11 +24,13 @@ function age(){
     if(d < 0 || d == 0 ){
         m--;
         d+= monthDay(y2, m);
+        console.log(monthDay(y2, m))
     }
     
     document.getElementById('age').innerHTML = 'Your Age is '+y+' Years '+m+' Months '+d+' Days';
 }
 
 function monthDay(year, month){
+    // console.log(year, month)
     return new Date(year, month, 0).getDate();
 }

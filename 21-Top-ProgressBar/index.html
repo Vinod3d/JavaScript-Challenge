@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        body {
+            height: 300vh;
+        }
+        #progressBar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 4px;
+            background-color: #3b82f6;
+            width: 0;
+            z-index: 50;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <div id="progressBar"></div>
+
+    <div class="container mx-auto py-20">
+        <h1 class="text-4xl font-bold text-center mb-10">Scroll to See Progress Bar</h1>
+        <p class="text-center">Scroll down to see the progress bar at the top of the page.</p>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
